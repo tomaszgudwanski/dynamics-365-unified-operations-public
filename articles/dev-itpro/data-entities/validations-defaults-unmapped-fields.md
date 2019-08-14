@@ -256,6 +256,4 @@ The two types of unmapped fields are *virtual* and *computed*. Unmapped fields a
 
 The following table provides a computed example if a **UnitOfMeasure** relationship exists, and displays that in an unmapped field.
 
-| Virtual field | Computed field |
-|---------------|----------------|
-| On postLoad()*//Check to see if record exists in UnitOfMeasureInternalCode.UnitOfMeasure//Set hasFixedInternalCode value based on the field*if(this.UnitOfMeasure)this.HasFixedInternalCodeVirtual = NoYes::Yes; else this.HasFixedInternalCodeVirtual = NoYes::No; | On computedFieldMethod()*//Desired SQL computed column statement(CASE WHEN T2.RECID IS NULL THEN 0 ELSE 1 END) AS INT)* |
+<table><tr><th>Virtual field</th><th>Computed field</th></tr><tr><td><p>On postLoad()</p><code><p><strong>//Check to see if record exists in UnitOfMeasureInternalCode.UnitOfMeasure</strong></p><p><strong>//Set hasFixedInternalCode value based on the field</strong></p><p>if(this.UnitOfMeasure)</p><p>&nbsp;&nbsp;this.HasFixedInternalCodeVirtual = NoYes::Yes;</p><p>else</p>&nbsp;&nbsp;this.HasFixedInternalCodeVirtual = NoYes::No;</code></td><td><p>On computedFieldMethod()</p><code><p><strong>//Desired SQL computed column statement</strong></p><p><strong>(CASE WHEN T2.RECID IS NULL THEN 0 ELSE 1 END) AS INT)</strong></p></code></td></tr></table>

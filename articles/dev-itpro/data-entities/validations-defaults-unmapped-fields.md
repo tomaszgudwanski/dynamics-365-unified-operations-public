@@ -133,7 +133,7 @@ Default values can be provided for initializations and rows.
 
 [![Over13](./media/over13.png)](./media/over13.png)
 
-To skip entity-level **initValue** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceInitValue(Boolean \_skip)**. This method turns **initValue** on or off for all data sources. By using the following API, you can skip **initValue** for a particular field, regardless of the consumer.
+To skip entity-level **initValue** for all back-end tables for a data entity, a consumer can call **DataEntity.skipDataSourceInitValue(Boolean \_skip)**. This method turns **initValue** on or off for all data sources. By using the following API, you can skip **initValue** for a particular data source, regardless of the consumer.
 
 [![Capturea](./media/capturea.png)](./media/capturea.png)
 
